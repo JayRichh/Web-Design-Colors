@@ -1,0 +1,131 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightsalmon;
+}
+
+body {
+
+}
+
+
+/* Header */
+.header {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    background-color: grey;
+    background-size: cover;
+}
+
+h1 {
+    padding-left: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    align-content: center;
+}
+
+img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+
+nav {
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+
+#navul01 {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+
+}
+
+    #navul01 li {
+        float: left;
+        padding-inline-end: 20px;
+    }
+
+        #navul01 li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: 1px solid darkgreen;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+
+            #navul01 li a:hover {
+                background-color: black;
+                color: white;   
+                
+            }
+
+/* Main */
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    background-color: grey;
+    width: 80%;
+    height: auto;
+    margin: 50px 0;
+}
+
+main .container h2 {
+    color: black;
+    letter-spacing: 2px;
+    padding-left: 30px;
+}
+
+
+/* Colors */
+
+div .colorContainer {
+    height: 700px;
+    background-color: white;
+}
+
+#colorContainer .winter {
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#colorContainer .winter .winterOne {
+    background-color: black;
+}
+
+#colorContainer .winter .winterTwo {
+    background-color: blue;
+}
+
+#colorContainer .winter .winterThree {
+    background-color: rosybrown;
+}
+

@@ -3,18 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: lightsalmon;
 }
 
 body {
-
 }
 
 
 /* Header */
-.header {
-    position: relative;
-}
 
 header {
     width: 100%;
@@ -23,14 +18,14 @@ header {
     overflow: hidden;
     background-position: center center;
     display: flex;
-    background-color: grey;
+    background-image: linear-gradient(to right, lightgrey, white);
     background-size: cover;
 }
 
 h1 {
     padding-left: 30px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     align-content: center;
 }
 
@@ -53,7 +48,6 @@ nav {
     list-style-type: none;
     overflow: hidden;
     background-color: transparent;
-
 }
 
     #navul01 li {
@@ -67,65 +61,283 @@ nav {
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            border: 1px solid darkgreen;
+            border: 2px solid grey;
             border-radius: 10%;
             cursor: pointer;
         }
 
             #navul01 li a:hover {
-                background-color: black;
-                color: white;   
-                
+                background-color: darkgray;
+                color: white;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
             }
 
 /* Main */
 
 main {
-    height: 100%;
-    width: 100%;
-    background-color: antiquewhite;
+    background-color: ghostwhite;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-main .container {
-    background-color: grey;
-    width: 80%;
-    height: auto;
-    margin: 50px 0;
-}
+    main .container {
+        background-color: lightgrey;
+        width: 80%;
+        min-width: 850px;
+        height: auto;
+        margin: 50px 0 0 0;
+    }
 
-main .container h2 {
-    color: black;
-    letter-spacing: 2px;
-    padding-left: 30px;
-}
+        main .container h2 {
+            color: black;
+            letter-spacing: 1px;
+            padding-left: 30px;
+        }
 
 
 /* Colors */
 
-div .colorContainer {
-    height: 700px;
+.colorContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: auto;
+    min-width: 800px;
     background-color: white;
+    margin: 20px;
 }
 
-#colorContainer .winter {
-    padding: 10px;
-    height: 300px;
-    width: 200px;
-    border: 2px solid black;
+    .colorContainer div {
+        position: relative;
+        box-sizing: content-box;
+    }
+
+        .colorContainer div h5 {
+            position: absolute;
+            z-index: 1;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    .colorContainer span {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        background-color: rgb(155, 155, 155, 0.3);
+        color: whitesmoke;
+        border-radius: 10%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 1s ease-out;
+    }
+
+        .colorContainer .hex {
+            left: 0;
+        }
+
+        .colorContainer .rgba {
+            right: 0;
+        }
+
+    .colorContainer #winter {
+        display: block;
+        min-width: 250px;
+        height: 400px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+        .colorContainer #winter div:hover span {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease-in;
+        }
+
+        .colorContainer #winter .winterOne {
+            height: 40%;
+            background-color: #112B3C;
+        }
+
+        .colorContainer #winter .winterTwo {
+            height: 25%;
+            background-color: #205375;
+        }
+
+        .colorContainer #winter .winterThree {
+            height: 20%;
+            background-color: #F66B0E;
+        }
+
+        .colorContainer #winter .winterFour {
+            height: 15%;
+            background-color: #EFEFEF;
+        }
+
+
+    .colorContainer #coffee {
+        display: block;
+        width: 250px;
+        height: 400px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+        .colorContainer #coffee div:hover span {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease-in;
+        }
+
+        .colorContainer #coffee .coffeeOne {
+            height: 40%;
+            background-color: rgb(224, 216, 176);
+        }
+
+        .colorContainer #coffee .coffeeTwo {
+            height: 25%;
+            background-color: rgb(252, 255, 231);
+        }
+
+        .colorContainer #coffee .coffeeThree {
+            height: 20%;
+            background-color: rgb(222, 160, 87);
+        }
+
+        .colorContainer #coffee .coffeeFour {
+            height: 15%;
+            background-color: rgb(206, 148, 97);
+        }
+
+
+    .colorContainer #nature {
+        display: block;
+        width: 250px;
+        height: 400px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+        .colorContainer #nature div:hover span {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease-in;
+        }
+
+        .colorContainer #nature .natureOne {
+            height: 40%;
+            background-color: rgb(233, 239, 192);
+        }
+
+        .colorContainer #nature .natureTwo {
+            height: 25%;
+            background-color: rgb(180, 225, 151);
+        }
+
+        .colorContainer #nature .natureThree {
+            height: 20%;
+            background-color: rgb(131, 189, 117);
+        }
+
+        .colorContainer #nature .natureFour {
+            height: 15%;
+            background-color: rgb(78, 148, 79);
+        }
+
+    .colorContainer #vintage {
+        display: block;
+        width: 250px;
+        height: 400px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+        .colorContainer #vintage div:hover span {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease-in;
+        }
+
+        .colorContainer #vintage .vintageOne {
+            height: 40%;
+            background-color: rgb(237, 230, 219);
+        }
+
+        .colorContainer #vintage .vintageTwo {
+            height: 25%;
+            background-color: rgb(65, 125, 122);
+        }
+
+        .colorContainer #vintage .vintageThree {
+            height: 20%;
+            background-color: rgb(29, 92, 99);
+        }
+
+        .colorContainer #vintage .vintageFour {
+            height: 15%;
+            background-color: rgb(26, 60, 64);
+        }
+
+
+/* Font Container */
+
+.fontContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    min-height: auto;
+    min-width: 800px;
+    background-color: white;
+    margin: 20px;
 }
 
-#colorContainer .winter .winterOne {
-    background-color: black;
+    .fontContainer .bold {
+        font-weight: bold;
+    }
+
+    .fontContainer .italic {
+        font-style: italic;
+    }
+
+/* Text Container */
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    min-height: auto;
+    min-width: 800px;
+    background-color: white;
+    margin: 20px;
 }
 
-#colorContainer .winter .winterTwo {
-    background-color: blue;
+    .textContainer .bold {
+        font-weight: bold;
+    }
+
+    .textContainer .italic {
+        font-style: italic;
+    }
+
+/* Footer */
+
+main footer #credits {
+    display: flex;
+    margin-right: 100%;
 }
 
-#colorContainer .winter .winterThree {
-    background-color: rosybrown;
-}
-
+    main footer #credits h6 {
+        flex: 1;
+        margin-right: 100%;
+        color: white;
+        background-color: lightgrey;
+        width: 80%;
+        min-height: auto;
+        min-width: 850px;
+    }

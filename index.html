@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
     <div class="header">
         <header>
             <h1>Web Designing Systems</h1>
@@ -21,16 +21,16 @@
             <nav>
                 <ul id="navul01">
                     <li>
-                    <a class="active" href="#colorContainer">Colors</a>
+                    <a class="active" href="#colorContainer" title="Colors">Colors</a>
                     </li>
                     <li>
-                    <a href="#fontsContainer">Fonts</a>
+                    <a href="#fontsContainer" title="Fonts">Fonts</a>
                     </li>
                     <li>
-                    <a href="#textContainer">Text Styles</a>
+                    <a href="#textContainer" title="Text Styles">Text Styles</a>
                     </li>
                     <li>
-                    <a href="#beanContainer">Beans</a>
+                    <a href="#beanContainer" title="Beans">Beans</a>
                     </li>
                 </ul>
             </nav>
@@ -40,68 +40,134 @@
         <div class="container">
             <h2>Color pallets</h2>
             <div class="colorContainer">
-
-                <div class=".winter">
-                    <div class=".winterOne">
-                        <p></p>
-                        <p></p>
+                <div id="winter">
+                    <h5>Winter</h5>
+                    <div class="winterOne">
+                        <span class="hex">#112B3C</span>
+                        <span class="rgba">rgb(17, 43, 60)</span>
                     </div>
-                    <div class=".winterTwo">
-                        <p></p>
-                        <p></p>
+                    <div class="winterTwo">
+                        <span class="hex">#205375</span>
+                        <span class="rgba">rgb(32, 83, 117)</span>
                     </div>
-                    <div class=".greenThree">
-                        <p></p>
-                        <p></p>
+                    <div class="winterThree">
+                        <span class="hex">#F66B0E</span>
+                        <span class="rgba">rgb(246, 107, 14)</span>
                     </div>
-                </div>
-
-                <div class=".coffee">
-                    <div class=".coffeeOne">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class=".coffeeTwo">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class=".coffeeThree">
-                        <p></p>
-                        <p></p>
+                    <div class="winterFour">
+                        <span class="hex">#FF8D29</span>
+                        <span class="rgba">rgb(239, 239, 239)</span>
                     </div>
                 </div>
 
-                <div class=".nature">
-                    <div class=".natureOne">
-                        <p></p>
-                        <p></p>
+                <div id="coffee">
+                    <h5>Coffee</h5>
+                    <div class="coffeeOne">
+                        <span class="hex">#E0D8B0</span>
+                        <span class="rgba">rgb(224, 216, 176)</span>
                     </div>
-                    <div class=".natureTwo">
-                        <p></p>
-                        <p></p>
+                    <div class="coffeeTwo">
+                        <span class="hex">#FCFFE7</span>
+                        <span class="rgba">rgb(252, 255, 231)</span>
                     </div>
-                    <div class=".coffeeThree">
-                        <p></p>
-                        <p></p>
+                    <div class="coffeeThree">
+                        <span class="hex">#DEA057</span>
+                        <span class="rgba">rgb(222, 160, 87)</span>
+                    </div>
+                    <div class="coffeeFour">
+                        <span class="hex">#CE9461</span>
+                        <span class="rgba">rgb(206, 148, 97)</span>
                     </div>
                 </div>
 
-                <div class=".vintage">
-                    <div class=".vintageOne">
-                        <p></p>
-                        <p></p>
+                <div id="nature">
+                    <h5>Nature</h5>
+                    <div class="natureOne">
+                        <span class="hex">#E9EFC0</span>
+                        <span class="rgba">rgb(233, 239, 192)</span>
                     </div>
-                    <div class=".vintageTwo">
-                        <p></p>
-                        <p></p>
+                    <div class="natureTwo">
+                        <span class="hex">#B4E197</span>
+                        <span class="rgba">rgb(180, 225, 151)</span>
                     </div>
-                    <div class=".vintageThree">
-                        <p></p>
-                        <p></p>
+                    <div class="natureThree">
+                        <span class="hex">#83BD75</span>
+                        <span class="rgba">rgb(131, 189, 117)</span>
+                    </div>
+                    <div class="natureFour">
+                        <span class="hex">#4E944F</span>
+                        <span class="rgba">rgb(78, 148, 79)</span>
+                    </div>
+                </div>
+
+                <div id="vintage">
+                    <h5>Vintage</h5>
+                    <div class="vintageOne">
+                        <span class="hex">#EDE6DB</span>
+                        <span class="rgba">rgb(237, 230, 219)</span>
+                    </div>
+                    <div class="vintageTwo">
+                        <span class="hex">#417D7A</span>
+                        <span class="rgba">rgb(65, 125, 122)</span>
+                    </div>
+                    <div class="vintageThree">
+                        <span class="hex">#1D5C63</span>
+                        <span class="rgba">rgb(29, 92, 99)</span>
+                    </div>
+                    <div class="vintageFour">
+                        <span class="hex">#1A3C40</span>
+                        <span class="rgba">rgb(26, 60, 64)</span>
                     </div>
                 </div>
             </div>
+
+            <h2>Font Styling</h2>
+            <div class="fontContainer">
+                <div class="fontOne">
+                    <h5></h5>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="fontTwo">
+                    <h5></h5>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="fontThree">
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+            </div>
+
+            <h2>Text Styling</h2>
+            <div class="textContainer">
+                <div class="textOne">
+                    <h5></h5>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="textTwo">
+                    <h5></h5>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="textThree">
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+            </div>
         </div>
+        <footer>
+            <div id="credits">
+                <h6>2022&nbsp;&nbsp;J.Richardson&nbsp;&nbsp;</h6>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
